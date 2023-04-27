@@ -1,0 +1,94 @@
+ @import url('https://fonts.google.com/specimen/Chivo+Mono');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo+Mono', cursive;
+ }
+
+ body {
+    text-align: center;
+    background: linear-gradient(#6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+ main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+ }
+
+ .pokedex {
+    width: 200%;
+    max-width: 425px;
+}
+
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 62%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon_data {
+    position: absolute;
+    font-size: clamp(10px ,5vw, 25px);
+    font-weight: 400;
+    color: #aaa;
+    top: 53%;
+    right:20%;
+}
+
+.pokemon_name {
+    color: #3a4443;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 24%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 600 #3a444b;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -6px 7px 0 #333
+}
+
+.buttons {
+    position: absolute;
+    bottom: 15%;
+    left: 60%;
+    width: 55%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button { 
+    width:55%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 400;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
